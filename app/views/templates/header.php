@@ -14,16 +14,26 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="<?= BASEURL ?>">Home <span class="sr-only">(current)</span></a>
-					</li>
+					
 					<li class="nav-item">
 						<a class="nav-link" href="<?= BASEURL ?>/aksesoris">Aksesoris</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="<?= BASEURL ?>/about">About</a>
-					</li>
+					
 				</ul>
 			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="">Tambah Item</a></li>
+					</ul>
+					
+					<ul class="nav navbar-nav navbar-right">
+						<form action="" method="get" class="navbar-form navbar-left">
+							<div class="form-group">
+								<input type="search" class="form-control" name="keyword" placeholder="masukan pencarian..." size="30" autocomplete="off" id="keyword">
+							</div>
+							<button type="submit" name="cari" id="cari">Cari !</button>
+						</form>
+					</ul>
+				</div><!-- /.navbar-collapse -->
 		</nav>
 		</div>

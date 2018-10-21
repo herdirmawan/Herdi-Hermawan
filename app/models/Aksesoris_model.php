@@ -8,6 +8,11 @@ class Aksesoris_model
 
 	private $table = 'aksesoris';
 	private $db;
+	private $merk;
+  	private $jenis;
+  	private $bahan;
+  	private $harga;
+  	private $stok;
 
 	public function __construct()
 	{

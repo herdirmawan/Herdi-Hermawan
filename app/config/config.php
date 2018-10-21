@@ -1,6 +1,6 @@
 <?php 
 
-	define('BASEURL', 'http://localhost/Tugas1_Kamis16_163040026_Husnun-Janan-Nabila/public');
+	define('BASEURL', 'http://localhost/Tugas1_Kamis16_163040026_Husnun/public');
 
 	define("DB_HOST", "localhost");
 	define("DB_USER", "root");
