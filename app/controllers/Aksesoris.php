@@ -37,4 +37,16 @@ class Aksesoris extends Controller
 		$this->view('templates/footer');
 	}
 	
+	public function search()
+	{
+		$keyword = isset($_POST['keyword']) ? $_POST['keyword'] : NULL;
+		$data = array(
+			'judul' => "Daftar Aksesoris",
+			'result' =>  $this->model('Aksesoris_model')->searchAksesoris($keyword)
+			);
+		$this->view('templates/header', $data);
+		$this->view('aksesoris/index', $data);
+		$this->view('templates/footer');
+	}
+	
 }
