@@ -31,4 +31,11 @@ class Aksesoris_model
 		$this->db->bind("id", $id);
 		return $this->db->single();
 	}
+	
+	public function searchAksesoris($keyword)
+    	{
+		$this->db->query("SELECT * FROM " . $this->table . "WHERE merk LIKE '%$keyword%' OR jenis LIKE '%$keyword%' OR bahan LIKE '%$keyword%' OR harga LIKE '%$keyword%' OR stock LIKE '%$keyword%'");
+		$this->db->bind('keyword',$keyword);	
+		return $this->db->resultSet();
+    	}
 }
